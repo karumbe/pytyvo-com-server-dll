@@ -1,0 +1,3 @@
+DEFINE CLASS SubrubroVO AS VOBase
+
+ENDDEFINE

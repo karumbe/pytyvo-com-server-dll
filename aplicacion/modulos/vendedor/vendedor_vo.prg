@@ -1,0 +1,3 @@
+DEFINE CLASS VendedorVO AS VOBase
+
+ENDDEFINE

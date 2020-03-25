@@ -1,0 +1,3 @@
+DEFINE CLASS MotivoClieVO AS VOBase
+
+ENDDEFINE

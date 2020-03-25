@@ -1,0 +1,8 @@
+familia
+rubro
+subrubro
+marca
+unidad_medida
+motivo_clie
+
+maquina

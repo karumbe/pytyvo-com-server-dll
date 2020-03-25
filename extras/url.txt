@@ -1,0 +1,2 @@
+COM+ Component on non-Windows platform
+https://stackoverflow.com/questions/84269/using-component-object-model-com-on-non-microsoft-platforms
