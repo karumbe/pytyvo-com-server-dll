@@ -1,4 +1,4 @@
-SET DEFAULT TO 'C:\Users\VAIO\Dropbox\vfp9_develop\pytyvo_com'
+SET DEFAULT TO 'E:\git\pytyvo-com-server-dll'
 SET PATH TO aplicacion\binario, ;
             aplicacion\modulos, ;
             aplicacion\modulos\barrio, ;
@@ -14,6 +14,7 @@ SET PATH TO aplicacion\binario, ;
             aplicacion\modulos\rubro, ;
             aplicacion\modulos\maquina, ;
             aplicacion\modulos\marca, ;
+            aplicacion\modulos\marca_ot, ;
             aplicacion\modulos\ruta, ;
             aplicacion\modulos\subrubro, ;
             aplicacion\modulos\unidad_medida, ;

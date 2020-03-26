@@ -89,6 +89,16 @@ SET PROCEDURE TO marca_validador_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO marca_validador_factory.prg ADDITIVE
 SET PROCEDURE TO marca_vo.prg ADDITIVE
 
+* Módulo: Marca - Órdenes de Trabajo.
+SET PROCEDURE TO marca_ot.prg ADDITIVE
+SET PROCEDURE TO marca_ot_conexion_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO marca_ot_conexion_factory.prg ADDITIVE
+SET PROCEDURE TO marca_ot_dao_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO marca_ot_dao_factory.prg ADDITIVE
+SET PROCEDURE TO marca_ot_validador_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO marca_ot_validador_factory.prg ADDITIVE
+SET PROCEDURE TO marca_ot_vo.prg ADDITIVE
+
 * Módulo: Motivo Cliente.
 SET PROCEDURE TO motivo_clie.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_conexion_dbf_impl.prg ADDITIVE
