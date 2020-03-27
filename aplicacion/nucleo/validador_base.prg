@@ -224,7 +224,7 @@ DEFINE CLASS ValidadorBase AS CUSTOM
 
         * inicio { validación del parámetro }
         IF !THIS.EsObjeto(toModelo) THEN
-            ? 'EstablecerValores: No es objeto.'
+            ? 'EstablecerValores: El modelo no es un objeto.'
             RETURN .F.
         ENDIF
 

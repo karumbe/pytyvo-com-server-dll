@@ -39,7 +39,7 @@ DEFINE CLASS FamiliaValidadorDBFImpl AS ValidadorBaseDBFImpl
         ENDIF
 
         THIS.nP1 = tnP1
-    ENDPROC
+    ENDFUNC
 
     **/
     * Valida el campo 'p2'.
@@ -62,7 +62,7 @@ DEFINE CLASS FamiliaValidadorDBFImpl AS ValidadorBaseDBFImpl
         ENDIF
 
         THIS.nP2 = tnP2
-    ENDPROC
+    ENDFUNC
 
     **/
     * Valida el campo 'p3'.
@@ -85,7 +85,7 @@ DEFINE CLASS FamiliaValidadorDBFImpl AS ValidadorBaseDBFImpl
         ENDIF
 
         THIS.nP3 = tnP3
-    ENDPROC
+    ENDFUNC
 
     **/
     * Valida el campo 'p4'.
@@ -108,7 +108,7 @@ DEFINE CLASS FamiliaValidadorDBFImpl AS ValidadorBaseDBFImpl
         ENDIF
 
         THIS.nP4 = tnP4
-    ENDPROC
+    ENDFUNC
 
     **/
     * Valida el campo 'p5'.
@@ -131,7 +131,7 @@ DEFINE CLASS FamiliaValidadorDBFImpl AS ValidadorBaseDBFImpl
         ENDIF
 
         THIS.nP5 = tnP5
-    ENDPROC
+    ENDFUNC
 
     **/
     * Establece los valores desde el objeto modelo.

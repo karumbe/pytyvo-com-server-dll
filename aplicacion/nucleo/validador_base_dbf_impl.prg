@@ -51,7 +51,7 @@ DEFINE CLASS ValidadorBaseDBFImpl AS ValidadorBase
         ENDIF
 
         THIS.nCodigo = tnCodigo
-    ENDPROC
+    ENDFUNC
 
     **/
     * Valida el campo 'nombre'.
@@ -114,7 +114,7 @@ DEFINE CLASS ValidadorBaseDBFImpl AS ValidadorBase
         ENDIF
 
         THIS.cNombre = tcNombre
-    ENDPROC
+    ENDFUNC
 
     **/
     * Valida el campo 'vigente'.
@@ -144,7 +144,7 @@ DEFINE CLASS ValidadorBaseDBFImpl AS ValidadorBase
         * fin { validaciones del parámetro }
 
         THIS.lVigente = tlVigente
-    ENDPROC
+    ENDFUNC
 
     **/
     * Valida el parámetro tnCodigo.

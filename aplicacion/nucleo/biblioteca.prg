@@ -99,7 +99,17 @@ SET PROCEDURE TO marca_ot_validador_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO marca_ot_validador_factory.prg ADDITIVE
 SET PROCEDURE TO marca_ot_vo.prg ADDITIVE
 
-* Módulo: Motivo Cliente.
+* Módulo: Modelo.
+SET PROCEDURE TO modelo.prg ADDITIVE
+SET PROCEDURE TO modelo_conexion_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO modelo_conexion_factory.prg ADDITIVE
+SET PROCEDURE TO modelo_dao_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO modelo_dao_factory.prg ADDITIVE
+SET PROCEDURE TO modelo_validador_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO modelo_validador_factory.prg ADDITIVE
+SET PROCEDURE TO modelo_vo.prg ADDITIVE
+
+* Módulo: Motivo de Ser Cliente.
 SET PROCEDURE TO motivo_clie.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_conexion_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_conexion_factory.prg ADDITIVE
