@@ -110,6 +110,31 @@ DEFINE CLASS COMBase AS Session
     ENDFUNC
 
     **/
+    * Verifica si un código está vigente.
+    *
+    * @param integer tnCodigo
+    * Código a ser verificado.
+    *
+    * @return boolean
+    * true si ésta vigente y false si no lo está u ocurre un error.
+    */
+    FUNCTION EstaVigente(tnCodigo AS Integer) AS Logical ;
+        HELPSTRING 'Devuelve true si ésta vigente un código y false si no lo está u ocurre un error.'
+
+        LOCAL llEstaVigente
+        llEstaVigente = .F.
+
+        * Realiza la búsqueda.
+        IF THIS.EstablecerConexion('BUSQUEDA') AND ;
+                THIS.EstablecerRepositorio() THEN
+            llEstaVigente = THIS.oRepositorio.EstaVigente(tnCodigo)
+        ENDIF
+
+        * Devuelve el resultado.
+        RETURN llEstaVigente
+    ENDFUNC
+
+    **/
     * Realiza una búsqueda por código.
     *
     * @param integer tnCodigo

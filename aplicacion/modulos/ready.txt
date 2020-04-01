@@ -6,3 +6,6 @@ unidad_medida
 motivo_clie
 
 maquina
+marca_ot
+modelo
+estado_ot

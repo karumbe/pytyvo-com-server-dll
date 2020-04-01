@@ -1,4 +1,4 @@
-DEFINE CLASS FamiliaConexionDBFImpl AS ConexionBaseDBFImpl
+DEFINE CLASS EstadoOtConexionDBFImpl AS ConexionBaseDBFImpl
 
     **/
     * Conexion para realizar búsqueda.
@@ -12,8 +12,8 @@ DEFINE CLASS FamiliaConexionDBFImpl AS ConexionBaseDBFImpl
         DIMENSION laTablas[1,3]
         EXTERNAL ARRAY taTablas
 
-        laTablas[1,1] = 'familias'
-        laTablas[1,2] = 'familias'
+        laTablas[1,1] = 'estadoot'
+        laTablas[1,2] = 'estados_ot'
 
         RETURN THIS.ObtenerConexion(@laTablas)
     ENDFUNC
@@ -30,10 +30,10 @@ DEFINE CLASS FamiliaConexionDBFImpl AS ConexionBaseDBFImpl
         DIMENSION laTablas[2,3]
         EXTERNAL ARRAY taTablas
 
-        laTablas[1,1] = 'maesprod'
-        laTablas[1,2] = 'articulos'
-        laTablas[2,1] = 'familias'
-        laTablas[2,2] = 'familias'
+        laTablas[1,1] = 'estadoot'
+        laTablas[1,2] = 'estados_ot'
+        laTablas[2,1] = 'ot'
+        laTablas[2,2] = 'ordenes_trabajo'
 
         RETURN THIS.ObtenerConexion(@laTablas)
     ENDFUNC
@@ -50,11 +50,11 @@ DEFINE CLASS FamiliaConexionDBFImpl AS ConexionBaseDBFImpl
         DIMENSION laTablas[2,3]
         EXTERNAL ARRAY taTablas
 
-        laTablas[1,1] = 'maesprod'
-        laTablas[1,2] = 'articulos'
-        laTablas[2,1] = 'familias'
-        laTablas[2,2] = 'familias'
-        laTablas[2,3] = .T.
+        laTablas[1,1] = 'estadoot'
+        laTablas[1,2] = 'estados_ot'
+        laTablas[1,3] = .T.
+        laTablas[2,1] = 'ot'
+        laTablas[2,2] = 'ordenes_trabajo'
 
         RETURN THIS.ObtenerConexion(@laTablas)
     ENDFUNC

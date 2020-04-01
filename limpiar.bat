@@ -76,6 +76,21 @@ ren depar_vo.prg depar_vo.prg
 
 
 
+echo :: Modulos/Estado - Órdenes de Trabajo ::
+cd\
+cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\estado_ot
+ren estado_ot.prg estado_ot.prg
+ren estado_ot_conexion_dbf_impl.prg estado_ot_conexion_dbf_impl.prg
+ren estado_ot_conexion_factory.prg estado_ot_conexion_factory.prg
+ren estado_ot_dao_dbf_impl.prg estado_ot_dao_dbf_impl.prg
+ren estado_ot_dao_factory.prg estado_ot_dao_factory.prg
+ren estado_ot_validador_dbf_impl.prg estado_ot_validador_dbf_impl.prg
+ren estado_ot_validador_factory.prg estado_ot_validador_factory.prg
+ren estado_ot_vo.prg estado_ot_vo.prg
+
+
+
+
 echo :: Modulos/Marca - Ordenes de Trabajo ::
 cd\
 cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\marca_ot

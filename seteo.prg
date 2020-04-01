@@ -7,6 +7,7 @@ SET PATH TO aplicacion\binario, ;
             aplicacion\modulos\cliente, ;
             aplicacion\modulos\cuenta_por_cobrar, ;
             aplicacion\modulos\depar, ;
+            aplicacion\modulos\estado_ot, ;
             aplicacion\modulos\familia, ;
             aplicacion\modulos\indizador, ;
             aplicacion\modulos\maquina, ;

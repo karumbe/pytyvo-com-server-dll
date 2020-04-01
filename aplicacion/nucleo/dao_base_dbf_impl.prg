@@ -85,7 +85,7 @@ DEFINE CLASS DAOBaseDBFImpl AS DAOBase
     ENDFUNC
 
     **/
-    * Verifica si el registro está vigente.
+    * Verifica si un código está vigente.
     *
     * @field
     * vigente L(1) not null

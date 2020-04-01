@@ -2,6 +2,7 @@ DEFINE CLASS ModeloVO AS VOBase
     * Propiedades.
     PROTECTED nMaquina
     PROTECTED nMarca
+    PROTECTED cNombreCompleto
 
     **/
     * Constructor.
@@ -26,14 +27,16 @@ DEFINE CLASS ModeloVO AS VOBase
     */
     * @Override
     FUNCTION Init
-        LPARAMETERS tnCodigo, tcNombre, tnMaquina, tnMarca, tlVigente
+        LPARAMETERS tnCodigo, tcNombre, tnMaquina, tnMarca, tlVigente, ;
+            tcNombreCompleto
 
-        IF PARAMETERS() != 5 THEN
+        IF PARAMETERS() != 6 THEN
             IF !VOBase::Init() THEN
                 RETURN .F.
             ENDIF
 
             STORE 0 TO tnMaquina, tnMarca
+            tcNombreCompleto = ''
         ELSE
             IF !VOBase::Init(tnCodigo, tcNombre, tlVigente) THEN
                 RETURN .F.
@@ -43,6 +46,7 @@ DEFINE CLASS ModeloVO AS VOBase
         WITH THIS
             .EstablecerMaquina(tnMaquina)
             .EstablecerMarca(tnMarca)
+            .EstablecerNombreCompleto(tcNombreCompleto)
         ENDWITH
     ENDFUNC
 
@@ -62,6 +66,15 @@ DEFINE CLASS ModeloVO AS VOBase
     */
     FUNCTION ObtenerMarca
         RETURN THIS.nMarca
+    ENDFUNC
+
+    **/
+    * Devuelve el nombre completo del modelo.
+    *
+    * @return string
+    */
+    FUNCTION ObtenerNombreCompleto
+        RETURN THIS.cNombreCompleto
     ENDFUNC
 
     **/
@@ -88,6 +101,19 @@ DEFINE CLASS ModeloVO AS VOBase
     FUNCTION EstablecerMarca
         LPARAMETERS tnMarca
         THIS.nMarca = tnMarca
+    ENDFUNC
+
+    **/
+    * Establece el nombre completo del modelo.
+    *
+    * @param string tcNombreCompleto
+    * Nombre completo del modelo.
+    *
+    * @return boolean true (default)
+    */
+    FUNCTION EstablecerNombreCompleto
+        LPARAMETERS tcNombreCompleto
+        THIS.cNombreCompleto = ALLTRIM(UPPER(tcNombreCompleto))
     ENDFUNC
 
 ENDDEFINE

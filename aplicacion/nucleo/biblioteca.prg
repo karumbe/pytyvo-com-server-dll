@@ -56,6 +56,16 @@ SET PROCEDURE TO depar_dao_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO depar_dao_factory.prg ADDITIVE
 SET PROCEDURE TO depar_vo.prg ADDITIVE
 
+* Módulo: Estado - Órdenes de Trabajo.
+SET PROCEDURE TO estado_ot.prg ADDITIVE
+SET PROCEDURE TO estado_ot_conexion_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO estado_ot_conexion_factory.prg ADDITIVE
+SET PROCEDURE TO estado_ot_dao_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO estado_ot_dao_factory.prg ADDITIVE
+SET PROCEDURE TO estado_ot_validador_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO estado_ot_validador_factory.prg ADDITIVE
+SET PROCEDURE TO estado_ot_vo.prg ADDITIVE
+
 * Módulo: Familia.
 SET PROCEDURE TO familia.prg ADDITIVE
 SET PROCEDURE TO familia_conexion_dbf_impl.prg ADDITIVE

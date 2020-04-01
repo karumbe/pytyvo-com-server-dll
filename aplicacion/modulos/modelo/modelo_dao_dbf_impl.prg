@@ -134,6 +134,38 @@ DEFINE CLASS ModeloDAODBFImpl AS DAOBaseDBFImpl
     ENDFUNC
 
     **/
+    * Realiza una búsqueda por código.
+    *
+    * @field
+    * codigo N(4) not null unique
+    *
+    * @param integer tnCodigo
+    * Código a buscar.
+    *
+    * @return object|boolean
+    * object si tiene éxito y false en caso contrario.
+    */
+    * @Override
+    FUNCTION ObtenerPorCodigo
+        LPARAMETERS tnCodigo
+
+        LOCAL loModelo
+
+        loModelo = DAOBaseDBFImpl::ObtenerPorCodigo(tnCodigo)
+
+        * Obtiene el nombre completo del modelo.
+        IF VARTYPE(loModelo) == 'O' THEN
+            loModelo.EstablecerNombreCompleto( ;
+                THIS.ObtenerNombreCompleto( ;
+                    loModelo.ObtenerCodigo() ;
+                ) ;
+            )
+        ENDIF
+
+        RETURN loModelo
+    ENDFUNC
+
+    **/
     * Realiza una búsqueda por nombre.
     *
     * @field
@@ -174,7 +206,7 @@ DEFINE CLASS ModeloDAODBFImpl AS DAOBaseDBFImpl
         ENDIF
 
         tcNombre = ALLTRIM(UPPER(tcNombre))
-        * fin { validaciones de parámetros
+        * fin { validaciones de parámetros }
 
         LOCAL loModelo, loExcepcion
         loModelo = .F.
@@ -197,6 +229,15 @@ DEFINE CLASS ModeloDAODBFImpl AS DAOBaseDBFImpl
             FINALLY
                 THIS.oConexion.Desconectar()
             ENDTRY
+        ENDIF
+
+        * Obtiene el nombre completo del modelo.
+        IF VARTYPE(loModelo) == 'O' THEN
+            loModelo.EstablecerNombreCompleto( ;
+                THIS.ObtenerNombreCompleto( ;
+                    loModelo.ObtenerCodigo() ;
+                ) ;
+            )
         ENDIF
 
         RETURN loModelo
