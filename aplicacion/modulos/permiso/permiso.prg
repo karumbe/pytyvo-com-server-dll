@@ -28,7 +28,7 @@ DEFINE CLASS Permiso AS COMBase OLEPUBLIC
             RETURN .F.
         ENDIF
 
-        IF !THIS.oUtiles.ValidarTexto(tcModulo, 5, 12) THEN
+        IF !THIS.oUtiles.ValidarTexto(tcModulo, 4, 12) THEN
             RETURN .F.
         ENDIF
         * fin { validación de parámetros }
@@ -80,7 +80,7 @@ DEFINE CLASS Permiso AS COMBase OLEPUBLIC
             RETURN .F.
         ENDIF
 
-        IF !THIS.oUtiles.ValidarTexto(tcModulo, 5, 12) THEN
+        IF !THIS.oUtiles.ValidarTexto(tcModulo, 4, 12) THEN
             RETURN .F.
         ENDIF
         * fin { validación de parámetros }
@@ -132,7 +132,7 @@ DEFINE CLASS Permiso AS COMBase OLEPUBLIC
             RETURN .F.
         ENDIF
 
-        IF !THIS.oUtiles.ValidarTexto(tcModulo, 5, 12) THEN
+        IF !THIS.oUtiles.ValidarTexto(tcModulo, 4, 12) THEN
             RETURN .F.
         ENDIF
         * fin { validación de parámetros }
@@ -184,7 +184,7 @@ DEFINE CLASS Permiso AS COMBase OLEPUBLIC
             RETURN .F.
         ENDIF
 
-        IF !THIS.oUtiles.ValidarTexto(tcModulo, 5, 12) THEN
+        IF !THIS.oUtiles.ValidarTexto(tcModulo, 4, 12) THEN
             RETURN .F.
         ENDIF
         * fin { validación de parámetros }
@@ -236,7 +236,7 @@ DEFINE CLASS Permiso AS COMBase OLEPUBLIC
             RETURN .F.
         ENDIF
 
-        IF !THIS.oUtiles.ValidarTexto(tcModulo, 5, 12) THEN
+        IF !THIS.oUtiles.ValidarTexto(tcModulo, 4, 12) THEN
             RETURN .F.
         ENDIF
         * fin { validación de parámetros }

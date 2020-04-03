@@ -3,6 +3,8 @@ rubro
 subrubro
 marca
 unidad_medida
+
+pais
 motivo_clie
 
 maquina

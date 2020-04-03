@@ -76,7 +76,7 @@ DEFINE CLASS UnidadMedidaVO AS VOBase
     */
     FUNCTION EstablecerSimbolo
         LPARAMETERS tcSimbolo
-        THIS.cSimbolo = ALLTRIM(UPPER(tcSimbolo))
+        THIS.cSimbolo = ALLTRIM(tcSimbolo)
     ENDFUNC
 
     **/

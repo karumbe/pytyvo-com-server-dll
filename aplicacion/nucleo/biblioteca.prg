@@ -129,6 +129,16 @@ SET PROCEDURE TO motivo_clie_validador_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_validador_factory.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_vo.prg ADDITIVE
 
+* Módulo: País.
+SET PROCEDURE TO pais.prg ADDITIVE
+SET PROCEDURE TO pais_conexion_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO pais_conexion_factory.prg ADDITIVE
+SET PROCEDURE TO pais_dao_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO pais_dao_factory.prg ADDITIVE
+SET PROCEDURE TO pais_validador_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO pais_validador_factory.prg ADDITIVE
+SET PROCEDURE TO pais_vo.prg ADDITIVE
+
 * Módulo: Permiso.
 SET PROCEDURE TO permiso.prg ADDITIVE
 SET PROCEDURE TO permiso_conexion_dbf_impl.prg ADDITIVE

@@ -76,7 +76,7 @@ ren depar_vo.prg depar_vo.prg
 
 
 
-echo :: Modulos/Estado - Órdenes de Trabajo ::
+echo :: Modulos/Estado - Ordenes de Trabajo ::
 cd\
 cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\estado_ot
 ren estado_ot.prg estado_ot.prg
@@ -121,7 +121,7 @@ ren modelo_vo.prg modelo_vo.prg
 
 
 
-echo :: Modulos/Motivo de Ser Cliente ::
+echo :: Modulos/Motivo de ser cliente ::
 cd\
 cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\motivo_clie
 ren motivo_clie.prg motivo_clie.prg
@@ -132,6 +132,21 @@ ren motivo_clie_dao_factory.prg motivo_clie_dao_factory.prg
 ren motivo_clie_validador_dbf_impl.prg motivo_clie_validador_dbf_impl.prg
 ren motivo_clie_validador_factory.prg motivo_clie_validador_factory.prg
 ren motivo_clie_vo.prg motivo_clie_vo.prg
+
+
+
+
+echo :: Modulos/Pais ::
+cd\
+cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\pais
+ren pais.prg pais.prg
+ren pais_conexion_dbf_impl.prg pais_conexion_dbf_impl.prg
+ren pais_conexion_factory.prg pais_conexion_factory.prg
+ren pais_dao_dbf_impl.prg pais_dao_dbf_impl.prg
+ren pais_dao_factory.prg pais_dao_factory.prg
+ren pais_validador_dbf_impl.prg pais_validador_dbf_impl.prg
+ren pais_validador_factory.prg pais_validador_factory.prg
+ren pais_vo.prg pais_vo.prg
 
 
 
@@ -232,7 +247,7 @@ ren unidad_medida_vo.prg unidad_medida_vo.prg
 
 
 
-echo :: Modulos/Máquina ::
+echo :: Modulos/Maquina ::
 cd\
 cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\maquina
 ren maquina.prg maquina.prg
