@@ -6,6 +6,7 @@ unidad_medida
 
 pais
 motivo_clie
+motivo_no
 
 maquina
 marca_ot

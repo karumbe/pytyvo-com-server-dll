@@ -15,6 +15,7 @@ SET PATH TO aplicacion\binario, ;
             aplicacion\modulos\marca_ot, ;
             aplicacion\modulos\modelo, ;
             aplicacion\modulos\motivo_clie, ;
+            aplicacion\modulos\motivo_no, ;
             aplicacion\modulos\pais, ;
             aplicacion\modulos\permiso, ;
             aplicacion\modulos\plazo, ;

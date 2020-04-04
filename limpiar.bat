@@ -136,6 +136,21 @@ ren motivo_clie_vo.prg motivo_clie_vo.prg
 
 
 
+echo :: Modulos/Motivo de las notas de deb./cred. ::
+cd\
+cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\motivo_no
+ren motivo_no.prg motivo_no.prg
+ren motivo_no_conexion_dbf_impl.prg motivo_no_conexion_dbf_impl.prg
+ren motivo_no_conexion_factory.prg motivo_no_conexion_factory.prg
+ren motivo_no_dao_dbf_impl.prg motivo_no_dao_dbf_impl.prg
+ren motivo_no_dao_factory.prg motivo_no_dao_factory.prg
+ren motivo_no_validador_dbf_impl.prg motivo_no_validador_dbf_impl.prg
+ren motivo_no_validador_factory.prg motivo_no_validador_factory.prg
+ren motivo_no_vo.prg motivo_no_vo.prg
+
+
+
+
 echo :: Modulos/Pais ::
 cd\
 cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\pais

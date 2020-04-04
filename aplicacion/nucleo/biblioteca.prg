@@ -119,7 +119,7 @@ SET PROCEDURE TO modelo_validador_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO modelo_validador_factory.prg ADDITIVE
 SET PROCEDURE TO modelo_vo.prg ADDITIVE
 
-* Módulo: Motivo de Ser Cliente.
+* Módulo: Motivo de ser cliente.
 SET PROCEDURE TO motivo_clie.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_conexion_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_conexion_factory.prg ADDITIVE
@@ -128,6 +128,16 @@ SET PROCEDURE TO motivo_clie_dao_factory.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_validador_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_validador_factory.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_vo.prg ADDITIVE
+
+* Módulo: Motivo de las notas de déb./créd.
+SET PROCEDURE TO motivo_no.prg ADDITIVE
+SET PROCEDURE TO motivo_no_conexion_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO motivo_no_conexion_factory.prg ADDITIVE
+SET PROCEDURE TO motivo_no_dao_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO motivo_no_dao_factory.prg ADDITIVE
+SET PROCEDURE TO motivo_no_validador_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO motivo_no_validador_factory.prg ADDITIVE
+SET PROCEDURE TO motivo_no_vo.prg ADDITIVE
 
 * Módulo: País.
 SET PROCEDURE TO pais.prg ADDITIVE
