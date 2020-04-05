@@ -1,22 +1,22 @@
-DEFINE CLASS UnidadMedidaValidadorDBFImpl AS ValidadorBaseDBFImpl
+DEFINE CLASS MonedaValidadorDBFImpl AS ValidadorBaseDBFImpl
 
     * Propiedades.
     PROTECTED cSimbolo
-    PROTECTED lDivisible
+    PROTECTED lDecimales
 
     * Inicialización de propiedades.
-    cClaseConexion = 'UnidadMedidaConexionFactory'
-    cClaseModelo = 'UnidadMedidaVO'
-    cClaseRepositorio = 'UnidadMedidaDAOFactory'
+    cClaseConexion = 'MonedaConexionFactory'
+    cClaseModelo = 'MonedaVO'
+    cClaseRepositorio = 'MonedaDAOFactory'
 
     cSimbolo = ''
-    lDivisible = .F.
+    lDecimales = .F.
 
     **/
     * Valida el campo 'simbolo'.
     *
     * @field
-    * simbolo C(5) not null unique
+    * simbolo C(4) not null unique
     *
     * @param string tcSimbolo
     * Símbolo a ser validado.
@@ -76,33 +76,33 @@ DEFINE CLASS UnidadMedidaValidadorDBFImpl AS ValidadorBaseDBFImpl
     ENDPROC
 
     **/
-    * Valida el campo 'divisible'.
+    * Valida el campo 'decimales'.
     *
     * @field
-    * divisible L(1) not null
+    * decimales L(1) not null
     *
-    * @param boolean tlDivisible
-    * Divisibilidad a ser validada.
+    * @param boolean tlDecimales
+    * Decimales a ser validado.
     *
     * @return boolean
-    * true si es válida y false en caso contrario.
+    * true si es válido y false en caso contrario.
     */
-    FUNCTION ValidarDivisible
-        LPARAMETERS tlDivisible
+    FUNCTION ValidarDecimales
+        LPARAMETERS tlDecimales
 
         * inicio { validaciones del parámetro }
         IF PARAMETERS() != 1 THEN
-            ? 'Divisible: Muy pocos argumentos.'
+            ? 'Decimales: Muy pocos argumentos.'
             RETURN .F.
         ENDIF
 
-        IF VARTYPE(tlDivisible) != 'L' THEN
-            ? 'Divisible: Debe ser de tipo lógico.'
+        IF VARTYPE(tlDecimales) != 'L' THEN
+            ? 'Decimales: Debe ser de tipo lógico.'
             RETURN .F.
         ENDIF
         * fin { validaciones del parámetro }
 
-        THIS.lDivisible = tlDivisible
+        THIS.lDecimales = tlDecimales
     ENDPROC
 
     **/
@@ -129,7 +129,7 @@ DEFINE CLASS UnidadMedidaValidadorDBFImpl AS ValidadorBaseDBFImpl
 
         WITH THIS
             .cSimbolo = toModelo.ObtenerSimbolo()
-            .lDivisible = toModelo.EsDivisible()
+            .lDecimales = toModelo.UtilizaDecimales()
         ENDWITH
     ENDFUNC
 
@@ -144,7 +144,7 @@ DEFINE CLASS UnidadMedidaValidadorDBFImpl AS ValidadorBaseDBFImpl
 
         IF ValidadorBase::Validar() AND ;
                 THIS.ValidarSimbolo(THIS.cSimbolo, THIS.nBandera, THIS.nCodigo) AND ;
-                THIS.ValidarDivisible(THIS.lDivisible) THEN
+                THIS.ValidarDecimales(THIS.lDecimales) THEN
             RETURN .T.
         ENDIF
 
@@ -177,7 +177,7 @@ DEFINE CLASS UnidadMedidaValidadorDBFImpl AS ValidadorBaseDBFImpl
         TRY
             WITH toModelo
                 .EstablecerSimbolo(THIS.cSimbolo)
-                .EstablecerDivisible(THIS.lDivisible)
+                .EstablecerDecimales(THIS.lDecimales)
             ENDWITH
         CATCH TO loExcepcion
             toModelo = .F.
@@ -190,7 +190,7 @@ DEFINE CLASS UnidadMedidaValidadorDBFImpl AS ValidadorBaseDBFImpl
     * Valida el parámetro tcSimbolo.
     *
     * @field
-    * simbolo C(5) not null unique
+    * simbolo C(4) not null unique
     *
     * @param string tcSimbolo
     * Símbolo a ser validado.
@@ -200,7 +200,7 @@ DEFINE CLASS UnidadMedidaValidadorDBFImpl AS ValidadorBaseDBFImpl
     */
     PROTECTED FUNCTION ValidarParamSimbolo
         LPARAMETERS tcSimbolo
-        RETURN THIS.oUtiles.ValidarTexto(tcSimbolo, 1, 5)
+        RETURN THIS.oUtiles.ValidarTexto(tcSimbolo, 1, 4)
     ENDFUNC
 
 ENDDEFINE

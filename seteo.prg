@@ -14,6 +14,7 @@ SET PATH TO aplicacion\binario, ;
             aplicacion\modulos\marca, ;
             aplicacion\modulos\marca_ot, ;
             aplicacion\modulos\modelo, ;
+            aplicacion\modulos\moneda, ;
             aplicacion\modulos\motivo_clie, ;
             aplicacion\modulos\motivo_no, ;
             aplicacion\modulos\pais, ;

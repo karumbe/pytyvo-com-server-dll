@@ -119,6 +119,16 @@ SET PROCEDURE TO modelo_validador_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO modelo_validador_factory.prg ADDITIVE
 SET PROCEDURE TO modelo_vo.prg ADDITIVE
 
+* Módulo: Moneda.
+SET PROCEDURE TO moneda.prg ADDITIVE
+SET PROCEDURE TO moneda_conexion_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO moneda_conexion_factory.prg ADDITIVE
+SET PROCEDURE TO moneda_dao_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO moneda_dao_factory.prg ADDITIVE
+SET PROCEDURE TO moneda_validador_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO moneda_validador_factory.prg ADDITIVE
+SET PROCEDURE TO moneda_vo.prg ADDITIVE
+
 * Módulo: Motivo de ser cliente.
 SET PROCEDURE TO motivo_clie.prg ADDITIVE
 SET PROCEDURE TO motivo_clie_conexion_dbf_impl.prg ADDITIVE

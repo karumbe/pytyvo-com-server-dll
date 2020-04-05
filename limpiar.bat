@@ -121,6 +121,21 @@ ren modelo_vo.prg modelo_vo.prg
 
 
 
+echo :: Modulos/Moneda ::
+cd\
+cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\moneda
+ren moneda.prg moneda.prg
+ren moneda_conexion_dbf_impl.prg moneda_conexion_dbf_impl.prg
+ren moneda_conexion_factory.prg moneda_conexion_factory.prg
+ren moneda_dao_dbf_impl.prg moneda_dao_dbf_impl.prg
+ren moneda_dao_factory.prg moneda_dao_factory.prg
+ren moneda_validador_dbf_impl.prg moneda_validador_dbf_impl.prg
+ren moneda_validador_factory.prg moneda_validador_factory.prg
+ren moneda_vo.prg moneda_vo.prg
+
+
+
+
 echo :: Modulos/Motivo de ser cliente ::
 cd\
 cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\motivo_clie

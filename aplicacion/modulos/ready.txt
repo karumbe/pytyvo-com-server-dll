@@ -12,3 +12,5 @@ maquina
 marca_ot
 modelo
 estado_ot
+
+moneda
