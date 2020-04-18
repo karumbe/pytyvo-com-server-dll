@@ -76,6 +76,21 @@ ren depar_vo.prg depar_vo.prg
 
 
 
+echo :: Modulos/Departamento ::
+cd\
+cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\depar
+ren depar.prg depar.prg
+ren depar_conexion_dbf_impl.prg depar_conexion_dbf_impl.prg
+ren depar_conexion_factory.prg depar_conexion_factory.prg
+ren depar_dao_dbf_impl.prg depar_dao_dbf_impl.prg
+ren depar_dao_factory.prg depar_dao_factory.prg
+ren depar_validador_dbf_impl.prg depar_validador_dbf_impl.prg
+ren depar_validador_factory.prg depar_validador_factory.prg
+ren depar_vo.prg depar_vo.prg
+
+
+
+
 echo :: Modulos/Estado - Ordenes de Trabajo ::
 cd\
 cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\estado_ot

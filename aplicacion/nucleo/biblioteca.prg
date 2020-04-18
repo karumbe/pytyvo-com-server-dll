@@ -49,11 +49,13 @@ SET PROCEDURE TO cuenta_por_cobrar_dao_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO cuenta_por_cobrar_dao_factory.prg ADDITIVE
 
 * Módulo: Departamento.
-SET PROCEDURE TO conexion_depar_dbf_impl.prg ADDITIVE
-SET PROCEDURE TO conexion_depar_factory.prg ADDITIVE
 SET PROCEDURE TO depar.prg ADDITIVE
+SET PROCEDURE TO depar_conexion_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO depar_conexion_factory.prg ADDITIVE
 SET PROCEDURE TO depar_dao_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO depar_dao_factory.prg ADDITIVE
+SET PROCEDURE TO depar_validador_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO depar_validador_factory.prg ADDITIVE
 SET PROCEDURE TO depar_vo.prg ADDITIVE
 
 * Módulo: Estado - Órdenes de Trabajo.

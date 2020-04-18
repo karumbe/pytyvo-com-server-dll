@@ -60,6 +60,46 @@ DEFINE CLASS DeparDAODBFImpl AS DAOBaseDBFImpl
     ENDFUNC
 
     **/
+    * Carga los datos de la tabla a un objeto.
+    *
+    * @param object toModelo
+    * Objeto a ser cargado.
+    *
+    * @return object
+    * object si tiene éxito y false en caso contrario.
+    */
+    * @Override
+    PROTECTED FUNCTION CargarDatos
+        LPARAMETERS toModelo
+
+        * inicio { validaciones del parámetro }
+        IF PARAMETERS() < 1 THEN
+            RETURN .F.
+        ENDIF
+
+        IF VARTYPE(toModelo) != 'O' THEN
+            RETURN .F.
+        ENDIF
+
+        IF LOWER(toModelo.Class) != LOWER(THIS.cClaseModelo) THEN
+            RETURN .F.
+        ENDIF
+        * fin { validaciones del parámetro }
+
+        TRY
+            WITH toModelo
+                .EstablecerCodigo(codigo)
+                .EstablecerNombre(nombre)
+                .EstablecerVigente(vigente)
+            ENDWITH
+        CATCH TO loExcepcion
+            toModelo = .F.
+        ENDTRY
+
+        RETURN toModelo
+    ENDFUNC
+
+    **/
     * Valida el parámetro tnCodigo.
     *
     * @field
