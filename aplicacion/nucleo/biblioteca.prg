@@ -25,14 +25,6 @@ SET PROCEDURE TO barrio_vo.prg ADDITIVE
 SET PROCEDURE TO conexion_barrio_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO conexion_barrio_factory.prg ADDITIVE
 
-* Módulo: Ciudad.
-SET PROCEDURE TO ciudad.prg ADDITIVE
-SET PROCEDURE TO ciudad_dao_dbf_impl.prg ADDITIVE
-SET PROCEDURE TO ciudad_dao_factory.prg ADDITIVE
-SET PROCEDURE TO ciudad_vo.prg ADDITIVE
-SET PROCEDURE TO conexion_ciudad_dbf_impl.prg ADDITIVE
-SET PROCEDURE TO conexion_ciudad_factory.prg ADDITIVE
-
 * Módulo: Cliente.
 SET PROCEDURE TO cliente.prg ADDITIVE
 SET PROCEDURE TO cliente_dao_dbf_impl.prg ADDITIVE
@@ -47,6 +39,16 @@ SET PROCEDURE TO conexion_cuenta_por_cobrar_factory.prg ADDITIVE
 SET PROCEDURE TO cuenta_por_cobrar.prg ADDITIVE
 SET PROCEDURE TO cuenta_por_cobrar_dao_dbf_impl.prg ADDITIVE
 SET PROCEDURE TO cuenta_por_cobrar_dao_factory.prg ADDITIVE
+
+* Módulo: Ciudad.
+SET PROCEDURE TO ciudad.prg ADDITIVE
+SET PROCEDURE TO ciudad_conexion_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO ciudad_conexion_factory.prg ADDITIVE
+SET PROCEDURE TO ciudad_dao_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO ciudad_dao_factory.prg ADDITIVE
+SET PROCEDURE TO ciudad_validador_dbf_impl.prg ADDITIVE
+SET PROCEDURE TO ciudad_validador_factory.prg ADDITIVE
+SET PROCEDURE TO ciudad_vo.prg ADDITIVE
 
 * Módulo: Departamento.
 SET PROCEDURE TO depar.prg ADDITIVE

@@ -37,19 +37,6 @@ ren conexion_barrio_factory.prg conexion_barrio_factory.prg
 
 
 
-echo :: Modulos/Ciudad ::
-cd\
-cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\ciudad
-ren ciudad.prg ciudad.prg
-ren ciudad_dao_dbf_impl.prg ciudad_dao_dbf_impl.prg
-ren ciudad_dao_factory.prg ciudad_dao_factory.prg
-ren ciudad_vo.prg ciudad_vo.prg
-ren conexion_ciudad_dbf_impl.prg conexion_ciudad_dbf_impl.prg
-ren conexion_ciudad_factory.prg conexion_ciudad_factory.prg
-
-
-
-
 echo :: Modulos/Cliente ::
 cd\
 cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\cliente
@@ -63,15 +50,17 @@ ren conexion_cliente_factory.prg conexion_cliente_factory.prg
 
 
 
-echo :: Modulos/Departamento ::
+echo :: Modulos/Ciudad ::
 cd\
-cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\depar
-ren conexion_depar_dbf_impl.prg conexion_depar_dbf_impl.prg
-ren conexion_depar_factory.prg conexion_depar_factory.prg
-ren depar.prg depar.prg
-ren depar_dao_dbf_impl.prg depar_dao_dbf_impl.prg
-ren depar_dao_factory.prg depar_dao_factory.prg
-ren depar_vo.prg depar_vo.prg
+cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\ciudad
+ren ciudad.prg ciudad.prg
+ren ciudad_conexion_dbf_impl.prg ciudad_conexion_dbf_impl.prg
+ren ciudad_conexion_factory.prg ciudad_conexion_factory.prg
+ren ciudad_dao_dbf_impl.prg ciudad_dao_dbf_impl.prg
+ren ciudad_dao_factory.prg ciudad_dao_factory.prg
+ren ciudad_validador_dbf_impl.prg ciudad_validador_dbf_impl.prg
+ren ciudad_validador_factory.prg ciudad_validador_factory.prg
+ren ciudad_vo.prg ciudad_vo.prg
 
 
 

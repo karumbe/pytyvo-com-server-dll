@@ -14,3 +14,6 @@ modelo
 estado_ot
 
 moneda
+
+departamento
+ciudad

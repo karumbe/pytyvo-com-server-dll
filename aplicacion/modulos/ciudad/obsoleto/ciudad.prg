@@ -2,11 +2,11 @@
 
 DO biblioteca.prg
 
-DEFINE CLASS Depar AS COMBase OLEPUBLIC
+DEFINE CLASS Ciudad AS COMBase OLEPUBLIC
 
     * Inicialización de propiedades.
-    cClaseConexion = 'ConexionDeparFactory'
-    cClaseRepositorio = 'DeparDAOFactory'
+    cClaseConexion = 'ConexionCiudadFactory'
+    cClaseRepositorio = 'CiudadDAOFactory'
 
     **/
     * Crea el cursor que contendrá el resultado de la búsqueda.
@@ -18,8 +18,9 @@ DEFINE CLASS Depar AS COMBase OLEPUBLIC
         THIS.cResultado = THIS.oUtiles.CreaTemp()
 
         CREATE CURSOR (THIS.cResultado) ( ;
-            codigo N(3), ;
+            codigo N(5), ;
             nombre C(30), ;
+            departamen N(3), ;
             vigente L(1) ;
         )
     ENDPROC
@@ -32,17 +33,18 @@ DEFINE CLASS Depar AS COMBase OLEPUBLIC
     */
     * @Override
     PROTECTED PROCEDURE CargarObjetoAlCursorResultado
-        LPARAMETERS toCiudad
+        LPARAMETERS toModelo
 
         LOCAL loExcepcion
 
-        IF VARTYPE(toCiudad) == 'O' THEN
+        IF VARTYPE(toModelo) == 'O' THEN
             TRY
                 SELECT (THIS.cResultado)
                 APPEND BLANK
-                REPLACE codigo WITH toCiudad.ObtenerCodigo(), ;
-                        nombre WITH toCiudad.ObtenerNombre(), ;
-                        vigente WITH toCiudad.EstaVigente()
+                REPLACE codigo WITH toModelo.ObtenerCodigo(), ;
+                        nombre WITH toModelo.ObtenerNombre(), ;
+                        departamen WITH toModelo.ObtenerDepartamen(), ;
+                        vigente WITH toModelo.EstaVigente()
             CATCH TO loExcepcion
             ENDTRY
         ENDIF

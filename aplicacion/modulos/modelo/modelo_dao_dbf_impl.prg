@@ -303,9 +303,9 @@ DEFINE CLASS ModeloDAODBFImpl AS DAOBaseDBFImpl
                     FROM ;
                         (THIS.cTabla) a ;
                         INNER JOIN maquinas b ;
-                            ON a.maquina = b.codigo ;
+                            ON a.maquina == b.codigo ;
                         INNER JOIN marcas_ot c ;
-                            ON a.marca = c.codigo ;
+                            ON a.marca == c.codigo ;
                     WHERE ;
                         (a.codigo == lnCodigo OR ;
                         ALLTRIM(b.nombre) + ' ' + ALLTRIM(c.nombre) + ' ' + ;
@@ -327,9 +327,9 @@ DEFINE CLASS ModeloDAODBFImpl AS DAOBaseDBFImpl
                     FROM ;
                         (THIS.cTabla) a ;
                         INNER JOIN maquinas b ;
-                            ON a.maquina = b.codigo ;
+                            ON a.maquina == b.codigo ;
                         INNER JOIN marcas_ot c ;
-                            ON a.marca = c.codigo ;
+                            ON a.marca == c.codigo ;
                     WHERE ;
                         a.codigo == lnCodigo OR ;
                         ALLTRIM(b.nombre) + ' ' + ALLTRIM(c.nombre) + ' ' + ;
@@ -396,9 +396,9 @@ DEFINE CLASS ModeloDAODBFImpl AS DAOBaseDBFImpl
                     FROM ;
                         (THIS.cTabla) a ;
                         INNER JOIN maquinas b ;
-                            ON a.maquina = b.codigo ;
+                            ON a.maquina == b.codigo ;
                         INNER JOIN marcas_ot c ;
-                            ON a.marca = c.codigo ;
+                            ON a.marca == c.codigo ;
                     WHERE ;
                         (tcCondicionFiltrado) ;
                     ORDER BY ;
@@ -417,9 +417,9 @@ DEFINE CLASS ModeloDAODBFImpl AS DAOBaseDBFImpl
                     FROM ;
                         (THIS.cTabla) a ;
                         INNER JOIN maquinas b ;
-                            ON a.maquina = b.codigo ;
+                            ON a.maquina == b.codigo ;
                         INNER JOIN marcas_ot c ;
-                            ON a.marca = c.codigo ;
+                            ON a.marca == c.codigo ;
                     ORDER BY ;
                         nombre_completo ;
                     INTO CURSOR ;
@@ -443,7 +443,7 @@ DEFINE CLASS ModeloDAODBFImpl AS DAOBaseDBFImpl
     **/
     * Agrega un nuevo registro.
     *
-    * @param object modelo
+    * @param object toModelo
     * Objeto a ser agregado.
     *
     * @return boolean
@@ -505,7 +505,7 @@ DEFINE CLASS ModeloDAODBFImpl AS DAOBaseDBFImpl
     **/
     * Modifica un registro existente.
     *
-    * @param object modelo
+    * @param object toModelo
     * Objeto a ser modificado.
     *
     * @return boolean
