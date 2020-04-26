@@ -24,19 +24,6 @@ ren pytyvo.vbr pytyvo.vbr
 
 
 
-echo :: Modulos/Barrio ::
-cd\
-cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\barrio
-ren barrio.prg barrio.prg
-ren barrio_dao_dbf_impl.prg barrio_dao_dbf_impl.prg
-ren barrio_dao_factory.prg barrio_dao_factory.prg
-ren barrio_vo.prg barrio_vo.prg
-ren conexion_barrio_dbf_impl.prg conexion_barrio_dbf_impl.prg
-ren conexion_barrio_factory.prg conexion_barrio_factory.prg
-
-
-
-
 echo :: Modulos/Cliente ::
 cd\
 cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\cliente
@@ -46,6 +33,21 @@ ren cliente_dao_factory.prg cliente_dao_factory.prg
 ren cliente_vo.prg cliente_vo.prg
 ren conexion_cliente_dbf_impl.prg conexion_cliente_dbf_impl.prg
 ren conexion_cliente_factory.prg conexion_cliente_factory.prg
+
+
+
+
+echo :: Modulos/Barrio ::
+cd\
+cd E:\git\pytyvo-com-server-dll\aplicacion\modulos\barrio
+ren barrio.prg barrio.prg
+ren barrio_conexion_dbf_impl.prg barrio_conexion_dbf_impl.prg
+ren barrio_conexion_factory.prg barrio_conexion_factory.prg
+ren barrio_dao_dbf_impl.prg barrio_dao_dbf_impl.prg
+ren barrio_dao_factory.prg barrio_dao_factory.prg
+ren barrio_validador_dbf_impl.prg barrio_validador_dbf_impl.prg
+ren barrio_validador_factory.prg barrio_validador_factory.prg
+ren barrio_vo.prg barrio_vo.prg
 
 
 

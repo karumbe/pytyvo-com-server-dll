@@ -2,9 +2,9 @@ SET DEFAULT TO 'E:\git\pytyvo-com-server-dll'
 SET PATH TO aplicacion\binario, ;
             aplicacion\imagenes, ;
             aplicacion\modulos, ;
-            aplicacion\modulos\barrio, ;
             aplicacion\modulos\cliente, ;
             aplicacion\modulos\cuenta_por_cobrar, ;
+            aplicacion\modulos\barrio, ;
             aplicacion\modulos\ciudad, ;
             aplicacion\modulos\depar, ;
             aplicacion\modulos\estado_ot, ;

@@ -367,7 +367,7 @@ DEFINE CLASS CiudadDAODBFImpl AS DAOBaseDBFImpl
                         INNER JOIN departamentos b ;
                             ON a.departamen == b.codigo ;
                     WHERE ;
-                        (tcCondicionFiltrado) ;
+                        &tcCondicionFiltrado ;
                     ORDER BY ;
                         nombre_completo ;
                     INTO CURSOR ;

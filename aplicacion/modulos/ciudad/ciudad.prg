@@ -133,19 +133,19 @@ DEFINE CLASS Ciudad AS COMBase OLEPUBLIC
     * @return boolean true (default)
     */
     PROTECTED PROCEDURE CargarObjetoAlCursorResultado
-        LPARAMETERS toCiudad
+        LPARAMETERS toModelo
 
         LOCAL loExcepcion
 
-        IF VARTYPE(toCiudad) == 'O' THEN
+        IF VARTYPE(toModelo) == 'O' THEN
             TRY
                 SELECT (THIS.cResultado)
                 APPEND BLANK
-                REPLACE codigo WITH toCiudad.ObtenerCodigo(), ;
-                        nombre WITH toCiudad.ObtenerNombre(), ;
-                        departamen WITH toCiudad.ObtenerDepartamen(), ;
-                        vigente WITH toCiudad.EstaVigente(), ;
-                        nombre_completo WITH toCiudad.ObtenerNombreCompleto()
+                REPLACE codigo WITH toModelo.ObtenerCodigo(), ;
+                        nombre WITH toModelo.ObtenerNombre(), ;
+                        departamen WITH toModelo.ObtenerDepartamen(), ;
+                        vigente WITH toModelo.EstaVigente(), ;
+                        nombre_completo WITH toModelo.ObtenerNombreCompleto()
             CATCH TO loExcepcion
             ENDTRY
         ENDIF
